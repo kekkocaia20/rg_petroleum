@@ -1,0 +1,291 @@
+/* General Styling */
+body {
+    background-color: #DC2A1C;
+    color: white; /* Cambiato colore del testo in bianco */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #DC2A1C;
+    border-bottom: 1px solid #000;
+}
+
+.navbar-brand h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Carousel */
+.carousel-item img {
+    object-fit: cover; /* Modificato per un aspetto migliore */
+    height: 499px;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 200px; /* Puoi regolare questa altezza in base alle tue esigenze */
+    object-fit: cover;
+    border-radius: 8px; /* Facoltativo, per rendere gli angoli delle immagini arrotondati */
+}
+
+/* Flexbox per le immagini e il testo */
+.text-left, .text-right {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra il contenuto */
+    margin-bottom: 30px;
+    text-align: left; /* Allinea il testo a sinistra */
+}
+
+.text-left .section-text, .text-right .section-text {
+    text-align: justify;
+}
+
+/* Sezione Titolo */
+.section-title {
+    font-size: 2rem;
+    color: #fff; /* Titoli in bianco */
+    margin-bottom: 20px;
+}
+
+/* Testo della Sezione */
+.section-text {
+    color: #fff; /* Testo bianco */
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.video-container video {
+    border-radius: 25px; 
+    transition: transform 0.3s ease-in-out; /* Aggiungi una transizione per l'hover */
+}
+
+.video-container video:hover {
+    transform: scale(1); /* Effetto di ingrandimento quando si passa sopra */
+}
+
+.img-container img {
+    border-radius: 15px; /* Bordo arrotondato per le immagini */
+    max-width: 80%; /* Limita la larghezza per renderle di dimensione media */
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Aggiungi una transizione per l'hover */
+}
+
+.img-container:hover img {
+    transform: scale(1.05); /* Effetto di ingrandimento quando si passa sopra */
+}
+
+/* Sections Container */
+.container-fluid {
+    padding: 50px 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #12336D;
+    color: white;
+    padding: 30px 0;
+    text-align: center; /* Centra il contenuto del footer */
+}
+
+footer h5, footer p {
+    margin: 0;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Rendi i titoli e testi più piccoli su schermi piccoli */
+.section-title {
+    font-size: 2.5rem;
+}
+
+video, img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Styling per le card delle sedi */
+.location-card {
+    background-color: #fff; /* Colore di sfondo bianco per le card */
+    border-radius: 10px; /* Bordo arrotondato */
+    padding: 20px; /* Padding interno per creare spazio tra il contenuto e i bordi */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Aggiunta di un'ombra leggera per un effetto sollevato */
+    text-align: center; /* Centra il testo all'interno delle card */
+    margin-bottom: 30px; /* Spazio tra le card */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease; /* Animazione per l'effetto hover */
+}
+
+/* Effetto hover sulle card */
+.location-card:hover {
+    transform: translateY(-10px); /* Solleva la card leggermente quando si passa sopra */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Aumenta l'ombra durante il passaggio del mouse */
+}
+
+/* Aggiustamenti per i titoli delle sedi */
+.location-card h5 {
+    color: #DC2A1C; /* Colore del titolo in rosso */
+    font-size: 1.25rem; /* Dimensione del font per i titoli */
+    margin-bottom: 10px; /* Spazio tra il titolo e il paragrafo */
+}
+
+/* Aggiustamenti per i testi all'interno delle card */
+.location-card p {
+    color: #333; /* Colore del testo grigio scuro per una buona leggibilità */
+    font-size: 0.9rem; /* Dimensione del font per il testo */
+    margin-bottom: 15px; /* Distanza tra il testo e il bottone */
+}
+
+/* Bottoni */
+.location-card .btn {
+    background-color: #DC2A1C; /* Colore di sfondo rosso per il bottone */
+    color: white; /* Colore del testo del bottone */
+    border-radius: 5px; /* Bordo arrotondato per il bottone */
+    padding: 10px 15px; /* Padding per il bottone */
+    font-size: 0.9rem; /* Dimensione del font per il bottone */
+    transition: background-color 0.3s ease; /* Animazione di cambio colore */
+}
+
+.location-card .btn:hover {
+    background-color: #b81f14; /* Colore più scuro per il bottone quando si passa sopra */
+}
+
+
+.link-footer{
+    text-decoration: none;
+    color: #DDBC53;
+    font-weight: 500;
+}
+
+.cover-container {
+    position: relative;
+    width: 80%;  /* Ridotto al 80% della larghezza della finestra */
+    height: 60vh;  /* Altezza 60% della finestra */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* Centra il contenitore orizzontalmente */
+    overflow: hidden;
+    border-radius: 20px; /* Bordi curvi */
+}
+
+.cover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Adatta l'immagine per coprire senza distorsioni */
+    object-position: center; /* Centra l'immagine */
+    border-radius: 15px; /* Bordi curvi anche sull'immagine */
+}
+
+/* Contenitore principale per centrare il testo */
+.content-container {
+    max-width: 800px;  /* Imposta la larghezza massima del contenuto */
+    margin: 0 auto;  /* Centra il contenuto orizzontalmente */
+    padding: 20px;
+    text-align: center;  /* Centra tutto il testo all'interno del contenitore */
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Aggiungi un effetto di "hover" sui punti della lista */
+ul li:hover {
+    color: #0066cc;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+
+/* Barra dei Cookie */
+#cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    z-index: 1000;
+  }
+  
+  #cookie-banner a {
+    color: #ff9900;
+    text-decoration: none;
+  }
+  
+  #cookie-banner button {
+    background-color: #ff9900;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  #cookie-banner button:hover {
+    background-color: #cc7a00;
+  }
+  
+
+
+  /* Media Query per schermi piccoli */
+@media (max-width: 767px) {
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .navbar-brand h1 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-inner img {
+        height: 250px;
+        object-fit: cover;
+    }
+
+    #cookie-banner {
+        font-size: 0.8rem;
+    }
+
+    .video-container video, .img-container img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Media Query per schermi tra 768px e 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .carousel-inner img {
+        height: 400px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+/* Media Query per schermi più grandi */
+@media (min-width: 1025px) {
+    .carousel-inner img {
+        height: 499px;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    /* Testo sezione */
+    .section-text {
+        font-size: 1rem;
+    }
+}
