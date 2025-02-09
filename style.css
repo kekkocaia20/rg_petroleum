@@ -287,10 +287,9 @@ ul li:hover {
   }
   
   .element {
-    transform: translateX(50px);
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    will-change: transform;
   }
-
-  .element {
-    will-change: transform, opacity;
-  }
+  
   
