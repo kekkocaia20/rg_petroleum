@@ -263,17 +263,6 @@ ul li:hover {
     }
 }
 
-/* Media Query per schermi tra 768px e 1024px */
-@media (min-width: 768px) and (max-width: 1024px) {
-    .carousel-inner img {
-        height: 400px;
-    }
-
-    .section-title {
-        font-size: 2rem;
-    }
-}
-
 /* Media Query per schermi più grandi */
 @media (min-width: 1025px) {
     .carousel-inner img {
