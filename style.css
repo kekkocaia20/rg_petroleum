@@ -278,3 +278,11 @@ ul li:hover {
         font-size: 1rem;
     }
 }
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+  
