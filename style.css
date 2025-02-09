@@ -286,3 +286,11 @@ ul li:hover {
     }
   }
   
+  .element {
+    transform: translateX(50px);
+  }
+
+  .element {
+    will-change: transform, opacity;
+  }
+  
